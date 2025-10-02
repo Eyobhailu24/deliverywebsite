@@ -7,7 +7,7 @@ import {
 import Checkout from './components/checkoutScreen/Checkout';
 import FoodItems from './components/FoodItems';
 import Profile from './components/Profile/Profile';
-import Restaurant from './components/restaurantsScreen/restaurant';
+import Restaurant from './components/restaurantsScreen/Restaurants';
 import TrackOrder from './components/trackorder/TrackOrder';
 import { CartProvider } from './context/CartContext';
 import HomePage from './pages/HomePage';

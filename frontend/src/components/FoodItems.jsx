@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import { useCarts } from '../context/CartContext';
 import { useRestaurants } from '../context/RestaurantContext';
 import Footer from './Footer';
-import Navbar from './NavBar';
+import Navbar from './Nav';
 import TopBar from './TopBar';
 
 function FoodItems() {

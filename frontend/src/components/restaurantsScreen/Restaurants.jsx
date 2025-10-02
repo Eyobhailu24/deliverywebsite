@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import { useCarts } from '../../context/CartContext';
 import { useRestaurants } from '../../context/RestaurantContext';
 import Loading from '../Loading';
-import Navbar from '../NavBar';
+import Navbar from '../Nav';
 import TopBar from '../TopBar';
 import Footer from '../Footer';
 
@@ -23,10 +23,10 @@ export default function Restaurant() {
   if (isLoading || !restaurant) {
     return <Loading />;
   }
-  
+
   const handleAddToCart = (item) => {
     const menu = { ...item, restaturantId: restaurant._id };
-    
+
     if (
       cart.length > 0 &&
       cart[0].restaurantId !== menu.restaurantId
@@ -39,9 +39,7 @@ export default function Restaurant() {
     addToCart(item);
   };
 
-
-  console.log(cart)
-
+  console.log(cart);
 
   return (
     <>

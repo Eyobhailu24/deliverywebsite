@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import Categories from '../components/Categories';
 import Footer from '../components/Footer';
 import Hero from '../components/Hero';
-import Navbar from '../components/Navbar';
+import Navbar from '../components/Nav';
 import PopularRestaurants from '../components/PopularRestaurants';
 import TopBar from '../components/TopBar';
 import TopOrders from '../components/TopOrders';
