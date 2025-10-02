@@ -1,0 +1,248 @@
+[
+  {
+    "name": "Cochin Fried Chicken",
+    "img": "https://t3.ftcdn.net/jpg/06/10/82/10/360_F_610821014_f7Jm2AO7taNJwEIlNDTxCkb4s4thrZlu.jpg",
+    "description": "Best burgers in Bishoftu with fresh ingredients.",
+    "phone": "+251911223344",
+    "address": "Menahriya, Bishoftu",
+    "is_open": true,
+    "opening_time": "09:00",
+    "closing_time": "22:00",
+    "menu": [
+      {
+        "category": "Burgers",
+        "image": "https://www.foodandwine.com/thmb/DI29Houjc_ccAtFKly0BbVsusHc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/crispy-comte-cheesburgers-FT-RECIPE0921-6166c6552b7148e8a8561f7765ddf20b.jpg",
+        "items": [
+          {
+            "name": "Cheese Burger",
+            "description": "Juicy beef patty with melted cheese.",
+            "price": 250,
+            "discount": 40,
+            "is_available": true,
+            "image_url": "https://www.foodandwine.com/thmb/DI29Houjc_ccAtFKly0BbVsusHc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/crispy-comte-cheesburgers-FT-RECIPE0921-6166c6552b7148e8a8561f7765ddf20b.jpg"
+          },
+          {
+            "name": "Veggie Burger",
+            "description": "Fresh and healthy vegetarian option.",
+            "price": 200,
+            "discount": 30,
+            "is_available": true,
+            "image_url": "https://www.realsimple.com/thmb/z3cQCYXTyDQS9ddsqqlTVE8fnpc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/real-simple-mushroom-black-bean-burgers-recipe-0c365277d4294e6db2daa3353d6ff605.jpg"
+          }
+        ]
+      },
+      {
+        "category": "Drinks",
+        "image":"https://t4.ftcdn.net/jpg/02/84/65/61/360_F_284656117_sPF8gVWaX627bq5qKrlrvCz1eFfowdBf.jpg",
+        "items": [
+          {
+            "name": "Coca Cola",
+            "discount": 50,
+            "price": 50,
+            "image_url": "https://www.georgiagiftsandmore.com/images/popup/coca-cola-glass-bottle2025.jpg",
+            "is_available": true
+            
+            
+          },
+          {
+            "name": "Fresh Juice",
+            "description": "Seasonal fruit juice.",
+            "price": 80,
+            "discount": 10,
+            "image_url": "https://images.deliveryhero.io/image/fd-pk/LH/w9aq-listing.jpg",
+            "is_available": true
+          }
+        ]
+      },
+      {
+        "category": "Lasagna",
+        "image":"https://recipe-graphics.grocerywebsite.com/0_GraphicsRecipes/1391_4k.jpg",
+        "items": [
+          {
+            "name": "Beaf Lasagna",
+            "description": "Lasagna with special beef sauce.",
+            "price": 400,
+            "discount": 50,
+            "image_url": "https://www.recipetineats.com/tachyon/2017/05/Lasagne-recipe-3-landscape.jpg",
+            "is_available": true
+            
+          },
+          {
+            "name": "Chicken Lasagna",
+            "description": "Lasagna with chicken and special sauce.",
+            "price": 460,
+            "image_url": "https://img.taste.com.au/UOcrAfiv/w1200-h630-cfill/taste/2023/02/chicken-and-zucchini-lasagne-184635-2.jpg",
+            "is_available": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Classic Noodle and Burger",
+    "img":"https://media.istockphoto.com/id/857927726/photo/pasta-with-meat-tomato-sauce-and-vegetables.jpg?s=612x612&w=0&k=20&c=1bcoXcBKM7Hb1ASweDx-vcwXEgy-WrCGM71dVP2Cp0w=",
+    "description": "Delicious wood-fired pizzas near Lake Bishoftu.",
+    "phone": "+251922334455",
+    "address": "Zukala, Bishoftu",
+    "is_open": true,
+    "opening_time": "10:00",
+    "closing_time": "23:00",
+    "menu": [
+      {
+        "category": "Pizzas",
+        "image": "https://uk.ooni.com/cdn/shop/articles/20220211142645-margherita-9920_e41233d5-dcec-461c-b07e-03245f031dfe.jpg?v=1737105431",
+        "items": [
+          {
+            "name": "Margherita",
+            "description": "Classic tomato, mozzarella, and basil.",
+            "price": 300,
+            "discount": 20,
+            "image_url": "https://cookingitalians.com/wp-content/uploads/2024/11/Margherita-Pizza.jpg",
+            "is_available": true
+          },
+          {
+            "name": "Pepperoni",
+            "description": "Spicy beef pepperoni with cheese.",
+            "price": 350,
+            "image_url": "https://www.simplyrecipes.com/thmb/pjYMLcsKHkr8D8tYixmaFNxppPw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__simply_recipes__uploads__2019__09__easy-pepperoni-pizza-lead-3-8f256746d649404baa36a44d271329bc.jpg",
+            "is_available": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Cool burger, pizza & Juice",
+    "img": "https://t4.ftcdn.net/jpg/06/15/14/85/360_F_615148591_7syVjfnwYHhuLxk37jQhJ2N4648EMdtV.jpg",
+    "description": "Delicious wood-fired pizzas near Lake",
+    "phone": "+251922334455",
+    "address": "Lake Side, Bishoftu",
+    "is_open": true,
+    "opening_time": "10:00",
+    "closing_time": "23:00",
+    "menu": [
+      {
+        "category": "Pizzas",
+        "image": "https://www.allrecipes.com/thmb/aefJMDXKqs42oAP71dQuYf_-Qdc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/6776_Pizza-Dough_ddmfs_4x3_1724-fd91f26e0bd6400a9e89c6866336532b.jpg",
+        "items": [
+          {
+            "name": "Margherita",
+            "description": "Classic tomato, mozzarella, and basil.",
+            "price": 300,
+            "image_url": "https://simplyhomecooked.com/wp-content/uploads/2023/04/Margherita-Pizza-3.jpg",
+            "is_available": true
+          },
+          {
+            "name": "Pepperoni",
+            "description": "Spicy beef pepperoni with cheese.",
+            "price": 350,
+            "discount":30,
+            "image_url": "https://i0.wp.com/daddioskitchen.com/wp-content/uploads/2023/01/IMG-5299.jpg?fit=800%2C800&ssl=1",
+            "is_available": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Shakach Bar and Restaurant",
+    "img": "https://thestayathomechef.com/wp-content/uploads/2024/03/Most-Amazing-Lasagna_Square-2-1200x752.jpg",
+    "description": "Delicious wood-fired Burgers near Lake Bishoftu.",
+    "phone": "+251922334455",
+    "address": "lemlem, Bishoftu",
+    "is_open": true,
+    "opening_time": "10:00",
+    "closing_time": "23:00",
+    "menu": [
+      {
+        "category": "Burgers",
+        "image": "https://www.foodandwine.com/thmb/XE8ubzwObCIgMw7qJ9CsqUZocNM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/MSG-Smash-Burger-FT-RECIPE0124-d9682401f3554ef683e24311abdf342b.jpg",
+        "items": [
+          {
+            "name": "Triple Burger",
+            "description": "3 patty's stacked ontop with lots of cheese",
+            "price": 300,
+            "image_url": "https://schweidandsons.com/wp-content/uploads/2023/07/ABC_S_S_05-TripleSmashBurger-15low.jpg",
+            "is_available": true
+          },
+          {
+            "name": "Double Burger",
+            "description": "2 patty's stacked ontop with lots of cheese and special sauce",
+            "price": 350,
+            "discount": 30,
+            "image_url": "https://burgerrecipes.sfo3.digitaloceanspaces.com/wp-content/uploads/2025/07/25031251/Gourmet-Double-Cheeseburger-a-la-McDonalds2.png",
+            "is_available": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "TRAMA BAR & RESTAURANT",
+    "img": "https://www.datocms-assets.com/129288/1725461261-big-juicy-burgers.jpg",
+    "description": "Delicious wood-fired pizzas near Lake Bishoftu.",
+    "phone": "+251922334455",
+    "address": "lemlem, Bishoftu",
+    "is_open": true,
+    "opening_time": "10:00",
+    "closing_time": "23:00",
+    "menu": [
+      {
+        "category": "Burrito",
+        "image": "https://cdn.britannica.com/13/234013-050-73781543/rice-and-chorizo-burrito.jpg",
+        "items": [
+          {
+            "name": "Chicken Burrito",
+            "description": "Classic tomato, mozzarella, and basil.",
+            "price": 300,
+            "discount": 20,
+            "image_url": "https://www.mexicanplease.com/wp-content/uploads/2024/02/Chicken-Burrito-with-Pico-de-Gallo-8.jpg",
+            "is_available": true
+          },
+          {
+            "name": "Beef Burrito",
+            "description": "Spicy beef pepperoni with cheese.",
+            "price": 350,
+            "image_url": "https://www.thecookierookie.com/wp-content/uploads/2023/05/featured-beef-burritos-recipe.jpg",
+            "is_available": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "7 LAKES Indian Restaurant",
+    "img": "https://www.blueosa.com/wp-content/uploads/2020/01/the-best-top-10-indian-dishes.jpg",
+    "description": "Delicious wood-fired pizzas near Lake Bishoftu.",
+    "phone": "+251922334455",
+    "address": "Mekelakeya, Bishoftu",
+    "is_open": true,
+    "opening_time": "10:00",
+    "closing_time": "23:00",
+    "menu": [
+      {
+        "category": "Indian Cuisine",
+        "image": "https://turmericvictoria.com/images/popular-indian-dishes-blogs.png",
+        "items": [
+          {
+            "name": "Chicken Tikka Massala",
+            "description": "indian best food.",
+            "price": 300,
+            "discount": 50,
+            "image_url": "https://www.seriouseats.com/thmb/DbQHUK2yNCALBnZE-H1M2AKLkok=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/chicken-tikka-masala-for-the-grill-recipe-hero-2_1-cb493f49e30140efbffec162d5f2d1d7.JPG",
+            "is_available": true
+            
+          },
+          {
+            "name": "Indian Chicken Curry",
+            "description": "Spicy chicken curry with cheese.",
+            "price": 350,
+            "discount": 60,
+            "image_url": "https://ichef.bbci.co.uk/food/ic/food_16x9_1600/recipes/chicken_curry_61994_16x9.jpg",
+            "is_available": true
+          }
+        ]
+      }
+    ]
+  }
+]
