@@ -11,7 +11,9 @@ const app = express();
 
 app.use(express.json());
 
-app.use(cors({ origin: 'http://localhost:5173' }));
+app.use(cors({ origin: `${
+  import.meta.env.VITE_REACT_APP_BACKEND_BASEURL
+}` }));
 
 app.use((req, res, next) => {
   req.requestTime = new Date().toISOString();

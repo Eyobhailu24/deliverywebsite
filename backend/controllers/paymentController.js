@@ -23,9 +23,12 @@ async function initializeChapaPayment(req, res) {
       last_name,
       phone_number: phone,
       tx_ref, // unique transaction reference
-      callback_url:
-        'http://127.0.0.1:3000/api/v1/payments/chapa/verify',
-      return_url: `http://localhost:5173/payments/success?tx_ref=${tx_ref}`,
+      callback_url: `${
+        import.meta.env.VITE_REACT_APP_BACKEND_BASEURL
+      }/api/v1/payments/chapa/verify`,
+      return_url: `${
+        import.meta.env.FRONTEND_URL
+      }/payments/success?tx_ref=${tx_ref}`,
     };
 
     // Send request to Chapa API
