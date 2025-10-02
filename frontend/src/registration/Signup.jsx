@@ -23,8 +23,9 @@ export default function Signup() {
     setNotification({ message: '', type: '' });
 
     try {
-      const url =
-        'http://127.0.0.1:3000/api/v1/users/signup';
+      const url = `${
+        import.meta.env.VITE_REACT_APP_BACKEND_BASEURL
+      }/api/v1/users/signup`;
       const response = await axios.post(url, form, {
         headers: { 'Content-Type': 'application/json' },
       });

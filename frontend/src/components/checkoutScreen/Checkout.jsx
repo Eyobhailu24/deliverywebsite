@@ -65,7 +65,9 @@ export default function Checkout() {
     try {
       const token = localStorage.getItem('token');
       const res = await axios.post(
-        `http://127.0.0.1:3000/api/v1/orders/${id}`,
+        `${
+          import.meta.env.VITE_REACT_APP_BACKEND_BASEURL
+        }/api/v1/orders/${id}`,
         orderData,
         {
           headers: { Authorization: `Bearer ${token}` },
@@ -91,7 +93,9 @@ export default function Checkout() {
 
       // 2. Assign driver
       const deliveryRes = await axios.post(
-        `http://127.0.0.1:3000/api/v1/delivery/${orderId}`
+        `${
+          import.meta.env.VITE_REACT_APP_BACKEND_BASEURL
+        }/api/v1/delivery/${orderId}`
       );
 
       console.log(deliveryRes)

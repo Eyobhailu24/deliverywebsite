@@ -23,7 +23,9 @@ function Success() {
 
       try {
         const res = await axios.get(
-          `http://127.0.0.1:3000/api/v1/payments/chapa/verify?tx_ref=${tx_ref}`
+          `${
+            import.meta.env.VITE_REACT_APP_BACKEND_BASEURL
+          }/api/v1/payments/chapa/verify?tx_ref=${tx_ref}`
         );
         if (res.data.success) {
           setMessage(

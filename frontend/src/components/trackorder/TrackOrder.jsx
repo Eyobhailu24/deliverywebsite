@@ -12,7 +12,9 @@ function TrackOrder() {
       try {
         const token = localStorage.getItem('token'); // saved at login
         const res = await axios.get(
-          'http://127.0.0.1:3000/api/v1/orders',
+          `${
+            import.meta.env.VITE_REACT_APP_BACKEND_BASEURL
+          }/api/v1/orders`,
           {
             headers: { Authorization: `Bearer ${token}` },
           }

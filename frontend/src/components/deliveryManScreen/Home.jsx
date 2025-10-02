@@ -11,7 +11,9 @@ function Home() {
       const token = localStorage.getItem('token');
       try {
         const res = await axios.get(
-          'http://127.0.0.1:3000/api/v1/delivery/',
+          `${
+            import.meta.env.VITE_REACT_APP_BACKEND_BASEURL
+          }/api/v1/delivery/`,
           {
             headers: { Authorization: `Bearer ${token}` },
           }
@@ -37,7 +39,9 @@ function Home() {
   const updateStatus = async (deliveryId, newStatus) => {
     try {
       const res = await axios.put(
-        `http://127.0.0.1:3000/api/v1/delivery/${deliveryId}`,
+        `${
+          import.meta.env.VITE_REACT_APP_BACKEND_BASEURL
+        }/api/v1/delivery/${deliveryId}`,
         {
           status: newStatus,
         }

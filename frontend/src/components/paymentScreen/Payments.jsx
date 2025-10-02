@@ -19,7 +19,9 @@ function Payments() {
 
       // Call backend API
       const res = await axios.post(
-        'http://127.0.0.1:3000/api/v1/payments/chapa/initialize',
+        `${
+          import.meta.env.VITE_REACT_APP_BACKEND_BASEURL
+        }/api/v1/payments/chapa/initialize`,
         {
           order_id: order.newOrder._id,
           amount: order.newOrder.total_amount,
