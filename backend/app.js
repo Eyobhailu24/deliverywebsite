@@ -15,6 +15,7 @@ app.use(
   cors({
     origin: [
       'https://flash-delivery.onrender.com',
+      'http://localhost:5173',
     ],
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     credentials: true,
