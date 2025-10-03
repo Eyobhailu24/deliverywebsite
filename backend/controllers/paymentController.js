@@ -1,5 +1,5 @@
 const { nanoid } = require('nanoid');
-const Payment = require('../models/paymentModel'); // your mongoose schema
+const Payment = require('../models/paymentModel'); // mongoose schema
 const axios = require('axios');
 
 async function initializeChapaPayment(req, res) {
@@ -13,8 +13,9 @@ async function initializeChapaPayment(req, res) {
       phone,
     } = req.body;
 
-    // Build payment data
+    // Unique transaction reference
     const tx_ref = nanoid();
+
     const data = {
       amount,
       currency: 'ETB',
@@ -22,9 +23,8 @@ async function initializeChapaPayment(req, res) {
       first_name,
       last_name,
       phone_number: phone,
-      tx_ref, // unique transaction reference
-      callback_url: `${process.env.VITE_REACT_APP_BACKEND_BASEURL}/api/v1/payments/chapa/verify`,
-      return_url: `${process.env.FRONTEND_URL}/payments/success?tx_ref=${tx_ref}`,
+      tx_ref,
+      return_url: `${process.env.VITE_REACT_APP_BACKEND_BASEURL}/api/v1/payments/chapa/verify?tx_ref=${tx_ref}`,
     };
 
     // Send request to Chapa API
@@ -40,13 +40,13 @@ async function initializeChapaPayment(req, res) {
     );
 
     if (response.data.status === 'success') {
-      // Save payment to DB with pending status
+      // Save payment to DB (status = pending until verified)
       const payment = new Payment({
         order_id,
         amount,
         method: 'chapa',
         status: 'pending',
-        transaction_id: data.tx_ref,
+        transaction_id: tx_ref,
       });
       await payment.save();
 
@@ -67,10 +67,10 @@ async function initializeChapaPayment(req, res) {
   }
 }
 
+
 async function verifyChapaPayment(req, res) {
   try {
-    const tx_ref = req.query.tx_ref; // transaction reference from callback
-    console.log('my name isssssss ' + tx_ref);
+    const tx_ref = req.query.tx_ref;
 
     const response = await axios.get(
       `https://api.chapa.co/v1/transaction/verify/${tx_ref}`,
@@ -82,29 +82,27 @@ async function verifyChapaPayment(req, res) {
     );
 
     if (response.data.status === 'success') {
-      const payment = await Payment.findOneAndUpdate(
+      await Payment.findOneAndUpdate(
         { transaction_id: tx_ref },
-        { status: 'completed' },
-        { new: true }
+        { status: 'completed' }
       );
-
-      // Redirect or respond to frontend
-      return res.json({ success: true, payment });
     } else {
       await Payment.findOneAndUpdate(
         { transaction_id: tx_ref },
         { status: 'failed' }
       );
-      return res.json({
-        success: false,
-        message: 'Payment failed',
-      });
     }
+
+    // Redirect user to homepage, no messages
+    return res.redirect(process.env.FRONTEND_URL);
   } catch (err) {
     console.error(err);
-    res.status(500).json({ error: 'Verification failed' });
+    return res.redirect(process.env.FRONTEND_URL); // redirect anyway
   }
 }
+
+  
+
 
 module.exports = {
   initializeChapaPayment,
