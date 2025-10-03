@@ -11,7 +11,16 @@ const app = express();
 
 app.use(express.json());
 
-app.use(cors('https://flashdelivery-rouge.vercel.app/'));
+app.use(
+  cors({
+    origin: [
+      'https://flashdelivery-rouge.vercel.app',
+      'http://localhost:5173',
+    ],
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    credentials: true,
+  })
+);
 
 app.use((req, res, next) => {
   req.requestTime = new Date().toISOString();
