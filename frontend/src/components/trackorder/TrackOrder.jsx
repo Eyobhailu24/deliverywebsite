@@ -107,8 +107,8 @@ function TrackOrder() {
               <p>
                 <strong>Delivery Man:</strong>{' '}
                 <span className="text-yellow-600 font-semibold">
-                  {order.delivery[0].delivery_Man} (
-                  {order.delivery[0].status})
+                  {order.delivery[0]?.delivery_Man} (
+                  {order.delivery[0]?.status})
                 </span>
               </p>
               <p>

@@ -11,9 +11,7 @@ const app = express();
 
 app.use(express.json());
 
-app.use(cors({ origin: `${
-  import.meta.env.VITE_REACT_APP_BACKEND_BASEURL
-}` }));
+app.use(cors());
 
 app.use((req, res, next) => {
   req.requestTime = new Date().toISOString();
@@ -25,7 +23,7 @@ app.use(morgan('dev'));
 app.use('/api/v1/restaurants', RestaurantRouter);
 app.use('/api/v1/users', UserRouter);
 app.use('/api/v1/orders', OrderRouter);
-app.use('/api/v1/payments', PaymentRouter)
-app.use('/api/v1/delivery', DeliveryRouter)
+app.use('/api/v1/payments', PaymentRouter);
+app.use('/api/v1/delivery', DeliveryRouter);
 
 module.exports = app;

@@ -24,10 +24,10 @@ async function initializeChapaPayment(req, res) {
       phone_number: phone,
       tx_ref, // unique transaction reference
       callback_url: `${
-        import.meta.env.VITE_REACT_APP_BACKEND_BASEURL
+        process.env.VITE_REACT_APP_BACKEND_BASEURL
       }/api/v1/payments/chapa/verify`,
       return_url: `${
-        import.meta.env.FRONTEND_URL
+        process.env.FRONTEND_URL
       }/payments/success?tx_ref=${tx_ref}`,
     };
 
