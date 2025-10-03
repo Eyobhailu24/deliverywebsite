@@ -13,10 +13,7 @@ app.use(express.json());
 
 app.use(
   cors({
-    origin: [
-      'https://flash-delivery.onrender.com',
-      'http://localhost:5173',
-    ],
+    origin: ['https://flash-delivery.onrender.com'],
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     credentials: true,
   })
