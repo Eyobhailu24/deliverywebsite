@@ -19,9 +19,7 @@ function Payments() {
 
       // Call backend API
       const res = await axios.post(
-        `${
-          import.meta.env.VITE_REACT_APP_BACKEND_BASEURL
-        }/api/v1/payments/chapa/initialize`,
+        'https://food-delivery-backend-3ita.onrender.com/api/v1/payments/chapa/initialize',
         {
           order_id: order.newOrder._id,
           amount: order.newOrder.total_amount,

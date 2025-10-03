@@ -23,9 +23,7 @@ function Success() {
 
       try {
         const res = await axios.get(
-          `${
-            import.meta.env.VITE_REACT_APP_BACKEND_BASEURL
-          }/api/v1/payments/chapa/verify?tx_ref=${tx_ref}`
+          `https://food-delivery-backend-3ita.onrender.com/api/v1/payments/chapa/verify?tx_ref=${tx_ref}`
         );
         if (res.data.success) {
           setMessage(
