@@ -24,7 +24,7 @@ async function initializeChapaPayment(req, res) {
       phone_number: phone,
       tx_ref, // unique transaction reference
       callback_url: `https://food-delivery-backend-3ita.onrender.com/api/v1/payments/chapa/verify`,
-      return_url: `https://flash-delivery.onrender.com//payments/success?tx_ref=${tx_ref}`,
+      return_url: `https://flash-delivery.onrender.com/payments/success?tx_ref=${tx_ref}`,
     };
 
     // Send request to Chapa API
