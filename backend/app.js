@@ -29,6 +29,10 @@ app.use((req, res, next) => {
 
 app.use(morgan('dev'));
 
+app.get('/', (req, res) => {
+  res.json('hello');
+})
+
 app.use('/api/v1/restaurants', RestaurantRouter);
 app.use('/api/v1/users', UserRouter);
 app.use('/api/v1/orders', OrderRouter);
