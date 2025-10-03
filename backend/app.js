@@ -14,7 +14,7 @@ app.use(express.json());
 app.use(
   cors({
     origin: [
-      'https://flashdelivery-rouge.vercel.app',
+      'https://flash-delivery.onrender.com',
       'http://localhost:5173',
     ],
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
@@ -31,7 +31,7 @@ app.use(morgan('dev'));
 
 app.get('/', (req, res) => {
   res.json('hello');
-})
+});
 
 app.use('/api/v1/restaurants', RestaurantRouter);
 app.use('/api/v1/users', UserRouter);
